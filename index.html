@@ -2,10 +2,83 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Sharuk events</title>
+  <style>
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a,.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	z-index: 9;
+}
+
+li a:hover,.dropdown:hover .dropbtn {
+	background-color: #4CAF50;
+	z-index: 9;
+}
+
+li.dropdown {
+	display: inline-block;
+	z-index: 9;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 9;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	z-index: 9;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1 z-index:9;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	z-index: 9;
+}
+
+.logout {
+	float: right;
+}
+
+
+body {
+	background-color: skyblue
+}
+
+h1 {
+	background-color: white
+}</style>
 </head>
+  
 <h1 align="centre" >Welcome to SrkHub Horse race</h1>
+  
 <body>
-<img src="http://sharuk.azurewebsites.net/race.jpg" height="200px">
+<img src="http://sharuk.azurewebsites.net/race.jpg" width="100%" height="300px">
 <form method="post" action="<%=request.getContextPath() %>/AttendeeController" > 
 <marquee behavior="scroll" direction="left">Events are available limited registrations  </marquee>
 
